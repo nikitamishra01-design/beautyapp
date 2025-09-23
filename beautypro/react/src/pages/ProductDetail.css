@@ -1,0 +1,161 @@
+
+.detail-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.detail {
+  display: flex;
+  gap: 20px;
+}
+
+.detail img {
+  width: 200px;
+  height: auto;
+}
+
+.detail-info {
+  flex: 1;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+  .box{
+    
+    display:flex;
+    text-align: center;
+    margin:25px;
+
+
+    
+    
+  }
+
+.related-products {
+  margin-top: 130px;
+
+  
+  width:auto;
+}
+
+.related-products h1{
+  margin-bottom: 10px;
+  text-align:center;
+  font-size:1.8rem;
+  
+}
+
+.related-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.related-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 3px;
+  width: 150px;
+
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.related-item:hover {
+  transform: scale(1.05);
+}
+
+.related-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.related-item h4 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.related-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .detail-page {
+     max-width: 800px;
+  
+  margin: 20px auto;
+  padding: 20px;
+  }
+
+  .detail {
+  display: flex;
+  gap: 50px;
+}
+
+  
+}
+    
+  
+
+
+
+
+@media (max-width: 475px) {
+  .detail-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+
+  
+}
+
+
+
+
+  
+  .detail img {
+  width: 150px;
+  height: auto;
+}
+
+  
+  
+
+
+  
+
+    
+
+  .related-list p{
+   color:white;
+  }
+
+
+}
+  
+
+    
+
+  
+
+
+    
+    
+  
+
+
+
+
+

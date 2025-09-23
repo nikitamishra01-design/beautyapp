@@ -1,0 +1,155 @@
+
+/* Responsive */
+
+/* src/pages/Cart.css */
+
+.new-cart {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf0f5;
+  min-height: 100vh;
+}
+
+.new-cart h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 40px;
+}
+
+.empty-msg {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cart-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+}
+
+.cart-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #f8bbd0;
+}
+
+.card-details h3 {
+  margin: 0;
+  color: #d81b60;
+}
+
+.card-details p {
+  margin: 8px 0;
+}
+
+.qty-control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.qty-control button {
+  padding: 4px 10px;
+  background-color: #f8bbd0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: pink;
+  color: white;
+  padding: 6px 12
+}
+.page-wrapper {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.cart {
+  max-width: 1200px;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .cart-grid {
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-card {
+    flex-direction: column;
+    align-items: center;   /* ✅ beech me rakho */
+    text-align: center;    /* ✅ content center aligned */
+    padding: 15px;
+  }
+
+  .cart-card img {
+    width: 150px;          /* ✅ fix size */
+    height: 150px;         /* ✅ square image */
+    object-fit: cover;
+  }
+
+  .card-details {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .qty-control {
+    gap: 8px;
+    justify-content: center; /* ✅ qty buttons center me */
+  }
+}
+
+@media (max-width: 480px) {
+  .new-cart h1 {
+    font-size: 1.4rem;
+  }
+
+  .cart-card {
+    padding: 12px;
+  }
+
+  .cart-card img {
+    width: 120px;          /* ✅ chhoti screen pe aur chhota */
+    height: 120px;
+  }
+
+  .qty-control button {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .card-details h3 {
+    font-size: 0.95rem;
+  }
+
+  .card-details p {
+    font-size: 0.85rem;
+  }
+}

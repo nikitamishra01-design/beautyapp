@@ -1,0 +1,92 @@
+/* General container */
+.userdata-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Sections for Signup/Login */
+.user-section {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+/* Section headers */
+.user-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* User cards */
+.user-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.user-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  padding: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.no-data button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.no-data button:hover {
+  background-color: #3730a3;
+}
+
+/* Bottom button */
+.bottom-button {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-button button {
+  padding: 12px 25px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.bottom-button button:hover {
+  background-color: #3730a3;
+}

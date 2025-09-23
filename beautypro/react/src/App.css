@@ -1,0 +1,82 @@
+
+
+/* ---------------- Reset & Base Setup ---------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column; /* column layout for sticky footer */
+}
+
+/* Root wrapper */
+#root {
+  flex: 1; /* content area grows */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- Main Content ---------------- */
+.main-content {
+  flex: 1; /* push footer to bottom */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ---------------- Products Grid ---------------- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+/* ---------------- Card Component ---------------- */
+.card {
+  width: 100%;
+  max-width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2em;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto; /* ensures footer always stays at the bottom */
+}
+
+/* ---------------- Responsive Adjustments ---------------- */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+}

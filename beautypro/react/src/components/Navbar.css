@@ -1,0 +1,112 @@
+
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff0f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo a {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #e91e63;
+}
+
+/* ✅ Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .nav-logo a {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;      /* vertical */
+    
+  }
+
+  .nav-logo a {
+    font-size: 1.6rem;   
+    margin-left:30px;      /* logo chhota */
+  }
+
+  .nav-links {
+    flex-direction: row;     /* links neeche neeche */
+    gap: 25px;                   /* kam space */
+    margin-top: 8px;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;          /* chhota font */
+  }
+
+  .value-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 475px) {
+  .navbar {
+    flex-direction: column;      /* vertical */
+    
+  }
+
+  .nav-logo a {
+    font-size: 1.6rem;   
+    margin-left:30px;      /* logo chhota */
+  }
+
+  .nav-links {
+    flex-direction: row;     /* links neeche neeche */
+    gap: 25px;                   /* kam space */
+    margin-top: 8px;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;          /* chhota font */
+  }
+
+  .value-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}

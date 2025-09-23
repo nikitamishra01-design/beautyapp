@@ -1,0 +1,193 @@
+
+/* Base */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* About page container */
+.about-page {
+  flex: 1; /* expand kare footer ke neeche tak */
+  background-color: #fff8f8;
+  color: #333;
+  overflow-x: hidden;
+  padding-bottom: 20px; /* optional gap for footer */
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  background: url('/assets/about-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  filter: brightness(95%);
+}
+
+.about-hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-hero-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.about-hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffccdd;
+}
+
+.about-hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffe;
+}
+
+/* Values Section */
+.about-values {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-values h2 {
+  font-size: 2.5rem;
+  color: #d63384;
+  margin-bottom: 40px;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background-color: #ffe6f0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #c2185b;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.value-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d63384;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.value-btn:hover {
+  background-color: #ff66aa;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Responsive */
+@media (max-width: 1024px) {
+  .about-hero {
+    height: 60vh;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: auto;
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-hero-text {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .about-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero-text p {
+    font-size: 1rem;
+  }
+
+  .about-values h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .value-card {
+    padding: 20px 15px;
+  }
+
+  .value-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .value-card p {
+    font-size: 0.9rem;
+  }
+
+  .value-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
